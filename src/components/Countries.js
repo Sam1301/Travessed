@@ -2,7 +2,6 @@ import React from 'react';
 
 import country from './country';
  
-
 import { type } from 'os';
 
 var sectionStyle1 = {
