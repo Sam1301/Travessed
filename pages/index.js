@@ -1,7 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Countries from './components/Countries';
+import React from 'react'
+import Link from 'next/link'
+import Countries from '../src/components/Countries'
 
 function NumberList(props) {
   const numbers = props.numbers;
@@ -19,8 +18,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src="https://littleletterslinked.com/wp-content/uploads/2019/07/0ec319c03a204b10baa583faaf1145de157d9b7c-1.jpg.webp" alt="logo"  />
-        <button>INSPIRE ME</button>
-        <button>KIDNAP ME</button>
+        <Link href='/inspire'>
+          <button>INSPIRE ME</button>
+        </Link>
+        <Link href='/kidnap'>
+          <button>KIDNAP ME</button>
+        </Link>
         <Countries />
       </header>
     </div>
